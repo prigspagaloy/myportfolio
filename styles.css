@@ -15,7 +15,7 @@ a {
 
 span.logo-description, ul.nav-list {
     font-family: 'Work Sans', sans-serif;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 
@@ -117,4 +117,10 @@ footer {
 footer svg {
     width: 2vw;
     height: 2vw;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
 }
