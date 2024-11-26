@@ -1,0 +1,120 @@
+@import url('https://fonts.cdnfonts.com/css/brittany-signature');
+
+
+
+header#home-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+span.logo-description, ul.nav-list {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+}
+
+
+
+header#home-top
+#web-logo
+h1#logo-design,
+span.logo-description {
+    display: inline-block;
+}
+
+#home-top
+#web-logo {
+    margin-left: 10vw;
+}
+
+#home-top
+#web-logo
+#logo-design {
+    font-family: 'Brittany Signature', sans-serif;
+    font-size: 1.8vw;
+}
+
+#home-top #navbar
+.nav-list {
+    display: flex;
+    gap: 8vw;
+    margin-right: 13vw;
+}
+
+#home-top nav#navbar
+ul.nav-list
+li.nav-btn {
+    list-style: none;
+}
+
+.for-web {
+    width: 35vw;
+    height: 28vw;
+    margin-right:6vw;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4vw;
+}
+
+main
+div#main-description {
+    text-align: center;
+    margin-left: 2.5vw;
+}
+
+main
+div#main-description
+h1 {
+    margin: 0;
+}
+
+main
+div#main-description
+h1 {
+    font-size: 4vw;
+}
+
+main
+div#main-description
+p {
+    font-size: 2vw;
+}
+
+main
+div#main-description
+h1,p {
+    font-family: 'Work Sans', sans-serif;
+}
+
+main
+div#main-description
+button {
+    color: white;
+    font-size: 1.5vw;
+    letter-spacing: 0.5vw;
+    background-color: black;
+    border-radius: 10px;
+    border: none;
+    width: 20vw;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    letter-spacing: 2vw;
+    margin-top: 5vw;
+}
+
+footer svg {
+    width: 2vw;
+    height: 2vw;
+}
