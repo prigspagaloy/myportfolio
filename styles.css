@@ -1,4 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/brittany-signature');
+@import url('https://fonts.cdnfonts.com/css/salonica');
 
 
 
@@ -16,7 +17,7 @@ a {
 span.logo-description, ul.nav-list {
     font-size: 1.5vw;
     font-family: 'Work Sans', sans-serif;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 
@@ -37,7 +38,7 @@ span.logo-description {
 #web-logo
 #logo-design {
     font-family: 'Brittany Signature', sans-serif;
-    font-size: 1.8vw;
+    font-size: 2vw;
 }
 
 #home-top #navbar
@@ -121,7 +122,45 @@ footer svg {
 }
 
 @media screen and (max-width: 600px) {
+    header#home-top
+    #web-logo
+    h1#logo-design {
+        font-size: 5vw;
+    }
+
+    span.logo-description, ul.nav-list {
+        font-size: 3vw;
+    }
+
+    ul.nav-list li.nav-btn {
+        display: none;
+    }
+    
     main {
         flex-direction: column;
+    }
+
+    main
+    div#main-description
+    h1 {
+        font-size: 9vw;
+    }
+
+    main
+    div#main-description
+    p {
+        font-size: 4vw;
+    }
+
+    main
+    div#main-description
+    button {
+        font-size: 4vw;
+        width: 50vw;
+    }
+
+    main
+    img.for-web {
+    margin-top: 4vw;
     }
 }
