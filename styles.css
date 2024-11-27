@@ -253,52 +253,8 @@ footer svg {
     }
 
     footer svg {
-        margin-top: 10vw;
+        margin-top: 2vw;
         width: 10vw;
         height: 10vw;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    header#home-top
-    #web-logo
-    h1#logo-design {
-        font-size: 5vw;
-    }
-
-    span.logo-description, ul.nav-list {
-        font-size: 3vw;
-    }
-
-    ul.nav-list li.nav-btn {
-        display: none;
-    }
-    
-    main {
-        flex-direction: column;
-    }
-
-    main
-    div#main-description
-    h1 {
-        font-size: 9vw;
-    }
-
-    main
-    div#main-description
-    p {
-        font-size: 4vw;
-    }
-
-    main
-    div#main-description
-    button {
-        font-size: 4vw;
-        width: 50vw;
-    }
-
-    main
-    img.for-web {
-    margin-top: 4vw;
     }
 }
