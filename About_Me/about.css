@@ -1,8 +1,16 @@
 @import url('https://fonts.cdnfonts.com/css/brittany-signature');
 @import url('https://fonts.cdnfonts.com/css/salonica');
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
-/*Header tag starts*/
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+/*Header starts*/
 header#home-top {
     display: flex;
     justify-content: space-between;
@@ -53,65 +61,25 @@ ul.nav-list
 li.nav-btn {
     list-style: none;
 }
-/*Header tag ends*/
+/*Header ends*/
 
-/*Main tag starts*/
-.for-web {
-    width: 40vw;
-    height: 31vw;
-    margin-right:6vw;
-}
-
-main {
+/*About me content starts*/
+div#about-me {
     display: flex;
     justify-content: space-around;
+    gap: 5vw;
     align-items: center;
-    margin-top: 6vw;
+    width: 90vw;
 }
 
-main
-div#main-description {
-    text-align: center;
-    margin-left: 2.5vw;
-}
-
-main
-div#main-description
-h1 {
-    margin: 0;
-}
-
-main
-div#main-description
-h1 {
-    font-size: 5vw;
-}
-
-main
-div#main-description
-p {
-    font-size: 2vw;
-}
-
-main
-div#main-description
-h1,p {
+#about-text {
+    width: 30vw;
+    font-size: 1.5vw;
+    line-height: 2.5vw;
+    text-align: justify;
     font-family: 'Work Sans', sans-serif;
 }
-
-main
-div#main-description
-button {
-    color: white;
-    font-size: 2vw;
-    letter-spacing: 0.5vw;
-    background-color: black;
-    border-radius: 20px;
-    border: none;
-    width: 25vw;
-    cursor: pointer;
-}
-/*Main tag ends*/
+/*About me content ends*/
 
 /*Footer tag starts*/
 footer {
@@ -130,7 +98,6 @@ footer svg {
 
 /*Media queries start*/
 @media screen and (max-width: 600px) {
-    
     /*Header tag starts*/
     header#home-top
     #web-logo
@@ -215,59 +182,36 @@ footer svg {
         display: none;
     }
     /*Header tag ends*/
-    
-    /*Main tag starts*/
-    main {
-        flex-direction: column;
-        gap: 5vw;
+
+    /*About me content starts*/
+    div#img-typing {
+        display: none;
     }
 
-    main
-    div#main-description
-    h1 {
-        font-size: 9vw;
-        justify-content: space-around;
+    #about-me {
+        position: relative;
+        right: -5vw;
     }
 
-    main
-    div#main-description
-    p {
-        font-size: 4vw;
+    div#about-text {
+        width: 60vw;
     }
 
-    main
-    div#main-description
-    button {
-        font-size: 4vw;
-        width: 50vw;
-        height: 10vw;
-        border-radius: 20px;
+    div#about-text p {
+        font-size: 4.6vw;
+        line-height: 6vw;
     }
-
-    main
-    div#main-description {
-        margin-left: 0;
-        order: 2;
-    }
-
-    main
-    img.for-web {
-        width: 80vw;
-        height: 70vw;
-        margin-right: 0;
-        order: 1;
-    }
-    /*Main tag ends*/
+    /*About me content ends*/
 
     /*Footer tag starts*/
     footer {
         letter-spacing: 5vw;
+        margin-top: 3%;
     }
 
     footer svg {
-        margin-top: 2vw;
-        width: 10vw;
-        height: 10vw;
+        width: 5vw;
+        height: 5vw;
     }
     /*Footer tag ends*/
 }
