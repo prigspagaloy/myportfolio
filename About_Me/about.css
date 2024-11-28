@@ -131,6 +131,7 @@ footer svg {
         border-radius: 20px;
         background-color: black;
         transition: 0.3s;
+        z-index: 2;
     }
 
     div#hamburger.active
@@ -164,6 +165,7 @@ footer svg {
         transition: 0.5s;
         width: 200px;
         height: 250px;
+        z-index: 1;
         
         ul.nav-list {
             flex-direction: column;
