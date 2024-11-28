@@ -176,7 +176,7 @@ footer svg {
 
     ul.nav-list.active li.nav-btn:nth-of-type(n) {
         display: block;
-        font-size: 4vw;
+        font-size: 5vw;
         color: white;
     }
 
@@ -196,7 +196,7 @@ footer svg {
     }
 
     div#about-text {
-        width: 60vw;
+        width: 70vw;
     }
 
     div#about-text p {
