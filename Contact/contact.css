@@ -1,4 +1,3 @@
-@import url('https://fonts.cdnfonts.com/css/brittany-signature');
 @import url('https://fonts.cdnfonts.com/css/salonica');
 
 *, *::before, *::after {
@@ -7,10 +6,9 @@
 
 body {
     margin: 0;
-    height: 100vh;
 }
 
-/*Header starts*/
+/*Header tag starts*/
 header#home-top {
     display: flex;
     justify-content: space-between;
@@ -61,42 +59,51 @@ ul.nav-list
 li.nav-btn {
     list-style: none;
 }
-/*Header ends*/
+/*Header tag ends*/
 
-/*About me content starts*/
-div#about-me {
+div#form-container {
     display: flex;
-    justify-content: space-around;
-    gap: 5vw;
-    align-items: center;
-    width: 90vw;
-}
-
-#about-text {
-    width: 30vw;
-    font-size: 1.5vw;
-    line-height: 2.5vw;
-    text-align: justify;
+    justify-content: center;
+    margin-top: 7vw;
     font-family: 'Work Sans', sans-serif;
 }
-/*About me content ends*/
 
-/*Footer tag starts*/
-footer {
-    text-align: center;
-    letter-spacing: 4vw;
-    margin-top: 10vw;
+form#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    /*height: 32vw;*/
+    gap: 0.3vw;
+    padding: 2vw;
+    font-size: 1.5vw;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 93%);
 }
 
-footer svg {
-    width: 3vw;
-    height: 3vw;
+label#label-lname,
+label#label-subject {
+    margin-top: 2vw;
 }
-/*Footer tag ends*/
 
+input#fname, input#lname {
+    height: 2vw;
+}
 
+textarea#subject {
+    height: 10vw;
+}
 
-/*Media queries start*/
+input#submit-form {
+    width: 8vw;
+    height: 1.8vw;
+    margin-top: 1.5vw;
+    font-size: 1vw;
+}
+
+label {
+    margin-top: 1vw;
+}
+
 @media screen and (max-width: 600px) {
     /*Header tag starts*/
     header#home-top
@@ -131,7 +138,6 @@ footer svg {
         border-radius: 20px;
         background-color: black;
         transition: 0.3s;
-        z-index: 2;
     }
 
     div#hamburger.active
@@ -165,7 +171,6 @@ footer svg {
         transition: 0.5s;
         width: 200px;
         height: 250px;
-        z-index: 1;
         
         ul.nav-list {
             flex-direction: column;
@@ -185,36 +190,27 @@ footer svg {
     }
     /*Header tag ends*/
 
-    /*About me content starts*/
-    div#img-typing {
-        display: none;
+    form#contact-form {
+        width: 80vw;
+        padding: 10vw;
+        margin-top: 20vw;
     }
 
-    #about-me {
-        position: relative;
-        right: -5vw;
+    label {
+        font-size: 5vw;
     }
 
-    div#about-text {
-        width: 70vw;
+    input#fname, input#lname {
+        height: 7vw;
     }
 
-    div#about-text p {
-        font-size: 4.6vw;
-        line-height: 6vw;
-    }
-    /*About me content ends*/
-
-    /*Footer tag starts*/
-    footer {
-        letter-spacing: 5vw;
-        margin-top: 5vw;
+    label#label-lname, label#label-subject {
+        margin-top: 10vw;
     }
 
-    footer svg {
-        width: 10vw;
-        height: 10vw;
+    input#submit-form {
+        font-size: 4vw;
+        width: 20vw;
+        height: 7vw;
     }
-    /*Footer tag ends*/
 }
-/*Media queries end*/
