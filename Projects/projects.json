@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "title": "Color Flipper",
+        "type": "Vanilla Javascript",
+        "img": "./Img/color-flipper.png",
+        "description": "",
+        "link": "https://prigspagaloy.github.io/color-flipper/"
+    },
+    {
+        "id": 2,
+        "title": "Christmas Countdown",
+        "type": "Vanilla Javascript",
+        "img": "",
+        "description": "",
+        "link": "https://prigspagaloy.github.io/christmas-countdown/"
+    },
+    {
+        "id": 3,
+        "title": "Counter",
+        "type": "Vanilla Javascript",
+        "img": "",
+        "description": "",
+        "link": "https://prigspagaloy.github.io/counter/"
+    },
+    {
+        "id": 4,
+        "title": "Hamburger Menu",
+        "type": "Vanilla Javascript",
+        "img": "",
+        "description": "",
+        "link": "https://prigspagaloy.github.io/hamburger-menu/"
+    },
+    {
+        "id": 5,
+        "title": "Menu",
+        "type": "Vanilla Javascript",
+        "img": "",
+        "description": "",
+        "link": "https://prigspagaloy.github.io/menu/"
+    },
+    {
+        "id": 6,
+        "title": "Modal",
+        "type": "Vanilla Javascript",
+        "img": "",
+        "description": "",
+        "link": "https://prigspagaloy.github.io/modal/"
+    },
+    {
+        "id": 7,
+        "title": "Quiz App",
+        "type": "Vanilla Javascript",
+        "img": "",
+        "description": "",
+        "link": "https://prigspagaloy.github.io/quiz-app/"
+    },
+    {
+        "id": 8,
+        "title": "Reviews",
+        "type": "Vanilla Javascript",
+        "img": "",
+        "description": "",
+        "link": "https://prigspagaloy.github.io/reviews/"
+    },
+    {
+        "id": 9,
+        "title": "Video Background",
+        "type": "Vanilla Javascript",
+        "img": "",
+        "description": "",
+        "link": "https://prigspagaloy.github.io/video-background/"
+    }
+]

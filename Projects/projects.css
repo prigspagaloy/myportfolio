@@ -1,0 +1,154 @@
+@import url('https://fonts.cdnfonts.com/css/brittany-signature');
+@import url('https://fonts.cdnfonts.com/css/salonica');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+/*Header starts*/
+header#home-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+span.logo-description, ul.nav-list {
+    font-size: 1.5vw;
+    font-family: 'Work Sans', sans-serif;
+}
+
+header#home-top
+#web-logo
+h1#logo-design,
+span.logo-description {
+    display: inline-block;
+    margin-right: 0.5vw;
+    font-weight: bold;
+}
+
+#home-top
+#web-logo {
+    margin-left: 5vw;
+}
+
+#home-top
+#web-logo
+#logo-design {
+    font-family: 'Brittany Signature', sans-serif;
+    font-size: 1.8vw;
+}
+
+#home-top #navbar
+.nav-list {
+    display: flex;
+    gap: 8vw;
+    margin: 0;
+    margin-right: -28vw;
+}
+
+#home-top nav#navbar
+ul.nav-list
+li.nav-btn {
+    list-style: none;
+}
+/*Header ends*/
+
+/*Media queries start*/
+@media screen and (max-width: 600px) {
+    /*Header tag starts*/
+    header#home-top
+    #web-logo
+    h1#logo-design {
+        font-size: 5vw;
+    }
+
+    span.logo-description {
+        margin-left: 1vw;
+    }
+
+    span.logo-description, ul.nav-list {
+        font-size: 3vw;
+    }
+
+    header#home-top
+    div#hamburger {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 1.7rem;
+        height: 1rem;
+        gap: 2px;
+    }
+
+    span.burger-line {
+        width: 100%;
+        height: 40%;
+        border-radius: 20px;
+        background-color: black;
+        transition: 0.3s;
+        z-index: 2;
+    }
+
+    div#hamburger.active
+    span.burger-line:nth-child(1) {
+        transform: translate(0, 6px) rotate(45deg);
+        background-color: white;
+    }
+    
+    div#hamburger.active
+    span.burger-line:nth-child(2) {
+        opacity: 0;
+    }
+
+    div#hamburger.active
+    span.burger-line:nth-child(3) {
+        transform: translate(0, -6px) rotate(-45deg);
+        background-color: white;
+    }
+
+    header#home-top
+    nav#navbar {
+        right: -100px;
+    }
+
+    header#home-top
+    nav#navbar.active {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: black;
+        transition: 0.5s;
+        width: 200px;
+        height: 250px;
+        z-index: 1;
+        
+        ul.nav-list {
+            flex-direction: column;
+            margin-top: 10vw;
+            gap: 10vw;
+        }
+    }
+
+    ul.nav-list.active li.nav-btn:nth-of-type(n) {
+        display: block;
+        font-size: 5vw;
+        color: white;
+    }
+
+    ul.nav-list li.nav-btn {
+        display: none;
+    }
+    /*Header tag ends*/
+}
