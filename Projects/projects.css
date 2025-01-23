@@ -63,6 +63,13 @@ li.nav-btn {
 }
 /*Header ends*/
 
+/*Main starts here*/
+.project-img {
+    width: 20vw;
+    height: 10vw;
+}
+/*Main ends here*/
+
 /*Media queries start*/
 @media screen and (max-width: 600px) {
     /*Header tag starts*/
@@ -131,7 +138,7 @@ li.nav-btn {
         background-color: black;
         transition: 0.5s;
         width: 200px;
-        height: 250px;
+        padding-bottom: 50px;
         z-index: 1;
         
         ul.nav-list {

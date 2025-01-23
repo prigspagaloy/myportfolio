@@ -164,7 +164,7 @@ footer svg {
         background-color: black;
         transition: 0.5s;
         width: 200px;
-        height: 250px;
+        padding-bottom: 50px;
         z-index: 1;
         
         ul.nav-list {

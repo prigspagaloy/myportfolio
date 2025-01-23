@@ -29,9 +29,11 @@
         <form>
             <label for="projects">Choose a Project:</label>
             <select name="projects" id="projects">
+                <option value="" disabled selected>Select a type</option>
             </select>
         </form>
     </div>
-    <script src="projects.js"></script>
+    <div id="projects-display"></div>
+    <script type="module" src="projects.js"></script>
 </body>
 </html>

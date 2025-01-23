@@ -9,9 +9,11 @@ navHam.addEventListener("click", () => {
 });
 
 const projectType = document.getElementById("projects");
+const displayProjects = document.getElementById("projects-display");
 
 fetch("./projects.json").then(response => response.json()).then(json => {
     getJson(json);
+    projectDisplay(json);
 }).catch(err => console.error(err));
 
 const getJson = (data) => {
@@ -22,7 +24,7 @@ const getJson = (data) => {
         }
         return values;
     }, ["All"]);
-    projectType.innerHTML = all.map(item => {
+    projectType.innerHTML += all.map(item => {
         //console.log(item)
         return `
         <option class="types" value="${item}">${item}</option>
@@ -30,7 +32,29 @@ const getJson = (data) => {
     }).join("");
     const types = document.querySelectorAll(".types");
     //console.log(types)
-    projectType.addEventListener("click", e => {
-        console.log(e)
-    })
-}
+    projectType.addEventListener("change", () => {
+        const optionSelected = projectType.value;
+        const displaySelected = data.filter(type => {
+            if(type.type === optionSelected) {
+                return type;
+            }
+        });
+        if (optionSelected === "All") {
+            projectDisplay(data);
+            console.log("ILoveYouGang")
+        } else {
+            projectDisplay(displaySelected);
+            console.log("IMissYouGang")
+        }
+    });
+};
+
+const projectDisplay = data => {
+    displayProjects.innerHTML = data.map(item => {
+        return `
+        <div id="item-container">
+            <img src="${item.img}" class="project-img">
+        </div>
+        `;
+    }).join("");
+};
