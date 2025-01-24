@@ -3,10 +3,10 @@
 
 *, *::before, *::after {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
-    margin: 0;
     height: 100vh;
 }
 
@@ -64,9 +64,53 @@ li.nav-btn {
 /*Header ends*/
 
 /*Main starts here*/
-.project-img {
+.body-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    margin-top: 5vw;
+}
+
+.projects-title {
+    text-align: center;
+}
+
+.project-list {
+    text-align: center;
+}
+
+#projects-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 16rem));
+    justify-content: center;
+    grid-gap: 10vw;
+}
+
+#item-container {
+    display: grid;
+    justify-self: center;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
     width: 20vw;
+    height: auto-fit;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.project-img {
+    width: inherit;
     height: 10vw;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.project-name-box {
+    padding: 1rem;
+    color: white;
+    align-content: center;
+    background-color: black;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    font-size: 0.9vw;
 }
 /*Main ends here*/
 
@@ -159,3 +203,4 @@ li.nav-btn {
     }
     /*Header tag ends*/
 }
+/*Media queries ends here*/

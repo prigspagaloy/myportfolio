@@ -4,7 +4,7 @@
         "title": "Color Flipper",
         "type": "Vanilla Javascript",
         "img": "./Img/color-flipper.png",
-        "description": "",
+        "description": "This project is a simple color flipper that randomly chooses a color when a certain button is clicked. It has a \"Simple\" and \"Hex\" color tabs.",
         "link": "https://prigspagaloy.github.io/color-flipper/"
     },
     {

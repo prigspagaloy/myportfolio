@@ -24,16 +24,18 @@
             <span class="burger-line"></span>
         </div>
     </header>
-    <h1>My Projects</h1>
-    <div>
-        <form>
-            <label for="projects">Choose a Project:</label>
-            <select name="projects" id="projects">
-                <option value="" disabled selected>Select a type</option>
-            </select>
-        </form>
+    <div class="body-content">
+        <h1 class="projects-title">My Projects</h1>
+        <div class="project-list">
+            <form>
+                <label for="projects">Choose a Project:</label>
+                <select name="projects" id="projects">
+                    <option value="" disabled selected>Select a type</option>
+                </select>
+            </form>
+        </div>
+        <div id="projects-display"></div>
     </div>
-    <div id="projects-display"></div>
     <script type="module" src="projects.js"></script>
 </body>
 </html>

@@ -54,6 +54,9 @@ const projectDisplay = data => {
         return `
         <div id="item-container">
             <img src="${item.img}" class="project-img">
+            <div class="project-name-box">
+                <h2><a href="${item.link}" target="_blank">${item.title}</a></h2>
+            </div>
         </div>
         `;
     }).join("");
