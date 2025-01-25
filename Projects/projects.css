@@ -68,10 +68,13 @@ li.nav-btn {
     display: flex;
     flex-direction: column;
     gap: 5vw;
+    margin-top: 2rem;
 }
 
 .projects-title {
+    font-size: 3rem;
     text-align: center;
+    margin-bottom: 0;
 }
 
 .project-list {
@@ -86,18 +89,19 @@ li.nav-btn {
 }
 
 #item-container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-self: center;
     box-shadow: 0 0 10px rgb(0, 0, 0);
-    width: 20vw;
-    height: auto-fit;
+    width: 16rem;
+    height: fit-content;
     text-align: center;
     border-radius: 10px;
 }
 
 .project-img {
     width: inherit;
-    height: 10vw;
+    height: 8rem;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
 }
@@ -109,7 +113,7 @@ li.nav-btn {
     background-color: black;
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
-    font-size: 0.9vw;
+    font-size: 0.9rem;
 }
 /*Main ends here*/
 
