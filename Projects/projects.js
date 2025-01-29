@@ -41,10 +41,8 @@ const getJson = (data) => {
         });
         if (optionSelected === "All") {
             projectDisplay(data);
-            console.log("ILoveYouGang")
         } else {
             projectDisplay(displaySelected);
-            console.log("IMissYouGang")
         }
     });
 };
