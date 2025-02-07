@@ -1,17 +1,7 @@
-const navHam = document.getElementById("hamburger");
-const navMenu = document.getElementById("navbar");
-const navBtn = document.getElementById("menu");
-
-navHam.addEventListener("click", () => {
-    navHam.classList.toggle("active");
-    navMenu.classList.toggle("active");
-    navBtn.classList.toggle("active");
-});
-
 const projectType = document.getElementById("projects");
 const displayProjects = document.getElementById("projects-display");
 
-fetch("./projects.json").then(response => response.json()).then(json => {
+fetch("Projects/projects.json").then(response => response.json()).then(json => {
     getJson(json);
     projectDisplay(json);
 }).catch(err => console.error(err));
