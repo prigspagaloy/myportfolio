@@ -75,7 +75,7 @@
         "id": 10,
         "title": "BarChart",
         "type": "D3 Project",
-        "img": "Projects/Img/barchart.png",
+        "img": "Projects/Img/barchart.PNG",
         "description": "",
         "link": "https://prigspagaloy.github.io/barchart/"
     },
@@ -91,7 +91,7 @@
         "id": 12,
         "title": "HeatMap",
         "type": "D3 Project",
-        "img": "Projects/Img/heatmap.png",
+        "img": "Projects/Img/heatmap.PNG",
         "description": "",
         "link": "https://prigspagaloy.github.io/heatmap/"
     },
@@ -99,7 +99,7 @@
         "id": 13,
         "title": "Choropleth-Map",
         "type": "D3 Project",
-        "img": "Projects/Img/choroplethmap.png",
+        "img": "Projects/Img/choroplethmap.PNG",
         "description": "",
         "link": "https://prigspagaloy.github.io/choropleth-map/"
     },
@@ -107,7 +107,7 @@
         "id": 14,
         "title": "TreeMap",
         "type": "D3 Project",
-        "img": "Projects/Img/treemap.png",
+        "img": "Projects/Img/treemap.PNG",
         "description": "",
         "link": "https://prigspagaloy.github.io/treemap/"
     }
