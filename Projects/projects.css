@@ -69,6 +69,7 @@ li.nav-btn {
     flex-direction: column;
     gap: 5vw;
     margin-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .projects-title {
