@@ -112,12 +112,43 @@
         "link": "https://prigspagaloy.github.io/treemap/"
     },
     {
-        "id": 15,
+        "id": 17,
         "title": "Random Quote Machine",
         "type": "React Project",
         "img": "Projects/Img/random-quote-machine.png",
         "description": "",
         "link": "https://prigspagaloy.github.io/new-quote-machine/"
+    },
+    {
+        "id": 18,
+        "title": "Markdown Previewer",
+        "type": "React Project",
+        "img": "Projects/Img/markdown-previewer.png",
+        "description": "",
+        "link": "https://spagaloy-markdown.netlify.app/"
+    },
+    {
+        "id": 19,
+        "title": "Drum Machine",
+        "type": "React Project",
+        "img": "Projects/Img/drum-machine.png",
+        "description": "",
+        "link": "https://spagaloy-drums.netlify.app/"
+    },
+    {
+        "id": 20,
+        "title": "Calculator",
+        "type": "React Project",
+        "img": "Projects/Img/calculator.png",
+        "description": "",
+        "link": "https://spagaloy-calculator.netlify.app/"
+    },
+    {
+        "id": 21,
+        "title": "Timer",
+        "type": "React Project",
+        "img": "Projects/Img/timer.png",
+        "description": "",
+        "link": "https://spagaloy-timer.netlify.app/"
     }
-
 ]
