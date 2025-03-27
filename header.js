@@ -2,13 +2,14 @@ const header = document.getElementById("home-top");
 
 header.innerHTML = `
     <div id="web-logo">
-            <h1 id="logo-design">RF</h1><span class="logo-description">Web Development</span>
-        </div>
+        <img class="logo" src="/Img/LOGO.png">
+    </div>
         <nav id="navbar">
             <ul id="menu" class="nav-list">
-                <li class="nav-btn"><a href="index.html">Home</a></li>
-                <li class="nav-btn"><a href="projects.html">Projects</a></li>
-                <li class="nav-btn"><a href="about.html">About</a></li>
+                <li class="nav-btn home"><a href="./">Home</a></li>
+                <li class="nav-btn project"><a href="projects.html">Projects</a></li>
+                <li class="nav-btn about"><a href="about.html">About</a></li>
+                <li class="nav-btn contact"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div id="hamburger">
@@ -16,14 +17,33 @@ header.innerHTML = `
             <span class="burger-line"></span>
             <span class="burger-line"></span>
         </div>
+        <div class="side-bar">
+            <div class="top-area"></div>
+            <div class="side-bar-menu">
+                <ul id="menu" class="nav-list">
+                <li class="nav-btn home"><a href="./">Home</a></li>
+                <li class="nav-btn project"><a href="projects.html">Projects</a></li>
+                <li class="nav-btn about"><a href="about.html">About</a></li>
+                <li class="nav-btn contact"><a href="contact.html">Contact</a></li>
+            </ul>
+            </div>
+        </div>
+   
 `;
 
-const navHam = document.getElementById("hamburger");
-const navMenu = document.getElementById("navbar");
-const navBtn = document.getElementById("menu");
+const logo = document.querySelector(".logo");
+// const navbar = document.getElementById("navbar");
+const hamburgerBtn = document.getElementById("hamburger");
+const burgerLine = document.querySelectorAll(".burger-line");
+const sideBar = document.querySelector(".side-bar");
 
-navHam.addEventListener("click", () => {
-    navHam.classList.toggle("active");
-    navMenu.classList.toggle("active");
-    navBtn.classList.toggle("active");
-});
+logo.addEventListener("click", () => {
+    window.location = "./";
+})
+
+hamburgerBtn.addEventListener("click", () => {
+    burgerLine.forEach(line => {
+        line.classList.toggle("active");
+    })
+    sideBar.classList.toggle("show");
+})

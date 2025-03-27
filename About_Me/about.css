@@ -1,70 +1,96 @@
 @import url('https://fonts.cdnfonts.com/css/brittany-signature');
 @import url('https://fonts.cdnfonts.com/css/salonica');
 
-*, *::before, *::after {
+/* *, *::before, *::after {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
     height: 100vh;
-}
+} */
 
 /*Header starts*/
-header#home-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-span.logo-description, ul.nav-list {
-    font-size: 1.5vw;
-    font-family: 'Work Sans', sans-serif;
-}
-
-header#home-top
-#web-logo
-h1#logo-design,
-span.logo-description {
-    display: inline-block;
-    margin-right: 0.5vw;
-    font-weight: bold;
-}
-
-#home-top
-#web-logo {
-    margin-left: 5vw;
-}
-
-#home-top
-#web-logo
-#logo-design {
-    font-family: 'Brittany Signature', sans-serif;
-    font-size: 1.8vw;
-}
-
-#home-top #navbar
-.nav-list {
-    display: flex;
-    gap: 8vw;
-    margin: 0;
-    margin-right: -28vw;
-}
-
-#home-top nav#navbar
-ul.nav-list
-li.nav-btn {
-    list-style: none;
-}
 /*Header ends*/
 
 /*About me content starts*/
-div#about-me {
+
+.about-me-content {
+    padding: 1rem 0 1rem 0;
+}
+
+.about-me-content-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 2rem; */
+}
+
+.about-me-introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 40%;
+    padding: 2rem;
+    border-right: 1px solid red;
+}
+
+.about-me-title {
+    /* place-self: center; */
+    position: relative;
+    width: fit-content;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1rem, 6vw, 4rem);
+}
+
+.about-me-title-text {
+    /* place-self: center; */
+    width: 70%;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1.2rem, 3.3vw, 3.3rem);
+}
+
+.about-me-description {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    place-items: center;
+    width: 50%;
+    height: 50%;
+    padding: 2rem;
+}
+
+.about-me-box1 {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background-color: white;
+}
+
+.about-me-box2 {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    place-self: center;
+    gap: 1rem;
+    /* position: absolute; */
+    /* top: 10%; */
+    width: 100%;
+    /* height: 90%; */
+    min-height: fit-content;
+    padding: 1.5rem;
+    background-color: #ED1C24;
+    z-index: 555;
+}
+
+.about-me-box2-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(0.9rem, 1.8vw, 1.5rem);
+    color: black;
+}
+
+/* div#about-me {
     display: flex;
     justify-content: space-around;
     gap: 5vw;
@@ -78,143 +104,55 @@ div#about-me {
     line-height: 2.5vw;
     text-align: justify;
     font-family: 'Work Sans', sans-serif;
-}
+} */
 /*About me content ends*/
 
 /*Footer tag starts*/
-footer {
-    text-align: center;
-    letter-spacing: 4vw;
-    margin-top: 10vw;
-}
 
-footer svg {
-    width: 3vw;
-    height: 3vw;
-}
 /*Footer tag ends*/
 
 
 
 /*Media queries start*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 767px) {
     /*Header tag starts*/
-    header#home-top
-    #web-logo
-    h1#logo-design {
-        font-size: 5vw;
-    }
-
-    span.logo-description {
-        margin-left: 1vw;
-    }
-
-    span.logo-description, ul.nav-list {
-        font-size: 3vw;
-    }
-
-    header#home-top
-    div#hamburger {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        width: 1.7rem;
-        height: 1rem;
-        gap: 2px;
-    }
-
-    span.burger-line {
-        width: 100%;
-        height: 40%;
-        border-radius: 20px;
-        background-color: black;
-        transition: 0.3s;
-        z-index: 2;
-    }
-
-    div#hamburger.active
-    span.burger-line:nth-child(1) {
-        transform: translate(0, 6px) rotate(45deg);
-        background-color: white;
-    }
     
-    div#hamburger.active
-    span.burger-line:nth-child(2) {
-        opacity: 0;
-    }
-
-    div#hamburger.active
-    span.burger-line:nth-child(3) {
-        transform: translate(0, -6px) rotate(-45deg);
-        background-color: white;
-    }
-
-    header#home-top
-    nav#navbar {
-        right: -100px;
-    }
-
-    header#home-top
-    nav#navbar.active {
-        position: fixed;
-        top: 0;
-        right: 0;
-        background-color: black;
-        transition: 0.5s;
-        width: 200px;
-        padding-bottom: 50px;
-        z-index: 1;
-        
-        ul.nav-list {
-            flex-direction: column;
-            margin-top: 10vw;
-            gap: 10vw;
-        }
-    }
-
-    ul.nav-list.active li.nav-btn:nth-of-type(n) {
-        display: block;
-        font-size: 5vw;
-        color: white;
-    }
-
-    ul.nav-list li.nav-btn {
-        display: none;
-    }
     /*Header tag ends*/
 
     /*About me content starts*/
-    div#img-typing {
-        display: none;
+    .about-me-content-container {
+        flex-direction: column;
+        align-items: last baseline;
+        /* height: 100vh; */
     }
 
-    #about-me {
-        position: relative;
-        right: -5vw;
+    .about-me-introduction {
+        width: 100%;
+        border: none;
     }
 
-    div#about-text {
-        width: 70vw;
+    .about-me-title-text {
+        width: 70%;
     }
 
-    div#about-text p {
-        font-size: 4.6vw;
-        line-height: 6vw;
+    .about-me-description {
+        width: 100%;
+        /* height: 100%; */
     }
+
+    .about-me-box1 {
+        width: 70%;
+        height: 50%;
+    }
+
+    
     /*About me content ends*/
 
     /*Footer tag starts*/
-    footer {
-        letter-spacing: 5vw;
-        margin-top: 5vw;
-    }
-
-    footer svg {
-        width: 10vw;
-        height: 10vw;
-    }
+    
     /*Footer tag ends*/
 }
 /*Media queries end*/

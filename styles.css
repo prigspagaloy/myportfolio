@@ -1,12 +1,52 @@
 @import url('https://fonts.cdnfonts.com/css/brittany-signature');
 @import url('https://fonts.cdnfonts.com/css/salonica');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap');
+@import "./Projects/projects.css";
+@import "./About_Me/about.css";
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #020202;
+    color: white;
+    height: 100vh;
+}
 
 /*Header tag starts*/
+
+
 header#home-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+}
+
+.logo {
+    cursor: pointer;
+    width: clamp(8rem, 19vw, 15rem);
+}
+
+#navbar {
+    padding: 0 1rem 0 0;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+li {
+    list-style: none;
 }
 
 a {
@@ -14,261 +54,189 @@ a {
     color: inherit;
 }
 
-span.logo-description, ul.nav-list {
-    font-size: 1.5vw;
-    font-family: 'Work Sans', sans-serif;
-}
-
-header#home-top
-#web-logo
-h1#logo-design,
-span.logo-description {
-    display: inline-block;
-    margin-right: 0.5vw;
+.contact {
+    color: black;
+    background-color: #ED1C24;
+    padding: 1rem 2rem 1rem 2rem;
+    width: max-content;
     font-weight: bold;
+    border-radius: 50px;
 }
 
-#home-top
-#web-logo {
-    margin-left: 5vw;
+#hamburger {
+    display: none;
 }
 
-#home-top
-#web-logo
-#logo-design {
-    font-family: 'Brittany Signature', sans-serif;
-    font-size: 1.8vw;
+.side-bar {
+    position: absolute;
+    /* display: flex;
+    flex-direction: column; */
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    transition: 0.3s allow-discrete;
 }
 
-#home-top #navbar
-.nav-list {
-    display: flex;
-    gap: 8vw;
-    margin: 0;
-    margin-right: -28vw;
-}
-
-#home-top nav#navbar
-ul.nav-list
-li.nav-btn {
-    list-style: none;
-}
+/* .side-bar {
+    display: none;
+} */
 /*Header tag ends*/
 
+
+
 /*Main tag starts*/
-.for-web {
-    width: 40vw;
-    height: 31vw;
-    margin-right:6vw;
-}
 
-main {
+.main {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: ; */
+    /* gap: 17rem; */
+    padding: 2rem;
+}
+
+.job-position {
+    font-size: clamp(3rem, 10vw, 6rem);
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-top: 6vw;
+    gap: 2rem;
+    /* margin-top: 10%; */
 }
 
-main
-div#main-description {
+.greeting {
+    font-family: 'Smooch Sans', sans-serif;
+    color: #ED1C24;
+}
+
+.intro-text {
     text-align: center;
-    margin-left: 2.5vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
-main
-div#main-description
-h1 {
-    margin: 0;
-}
-
-main
-div#main-description
-h1 {
-    font-size: 5vw;
-}
-
-main
-div#main-description
-p {
-    font-size: 2vw;
-}
-
-main
-div#main-description
-h1,p {
-    font-family: 'Work Sans', sans-serif;
-}
-
-main
-div#main-description
-button {
-    color: white;
-    font-size: 2vw;
-    letter-spacing: 0.5vw;
-    background-color: black;
-    border-radius: 20px;
+.project-btn {
+    background-color: #ED1C24;
+    /* width: 17rem; */
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 50px;
     border: none;
-    width: 25vw;
+    margin-top: 5%;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: bold;
     cursor: pointer;
 }
+
 /*Main tag ends*/
 
 /*Footer tag starts*/
-footer {
-    text-align: center;
-    letter-spacing: 4vw;
-    margin-top: 10vw;
-}
-
-footer svg {
-    width: 3vw;
-    height: 3vw;
+svg {
+    display: none;
 }
 /*Footer tag ends*/
 
 
 
 /*Media queries start*/
-@media screen and (max-width: 600px) {
-    
-    /*Header tag starts*/
-    header#home-top
-    #web-logo
-    h1#logo-design {
-        font-size: 5vw;
+@media screen and (max-width: 992px) {
+    #navbar {
+        display: none;
     }
 
-    span.logo-description {
-        margin-left: 1vw;
-    }
-
-    span.logo-description, ul.nav-list {
-        font-size: 3vw;
-    }
-
-    header#home-top
-    div#hamburger {
+    #hamburger {
+        position: relative;
         display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        width: 1.7rem;
-        height: 1rem;
-        gap: 2px;
+        justify-content: space-between;
+        width: 30px;
+        height: 15px;
+        z-index: 555;
     }
 
-    span.burger-line {
+    .burger-line {
         width: 100%;
-        height: 40%;
-        border-radius: 20px;
-        background-color: black;
+        height: 20%;
+        background-color: white;
+        border-radius: 50px;
         transition: 0.3s;
     }
 
-    div#hamburger.active
-    span.burger-line:nth-child(1) {
+    .burger-line.active:nth-child(1) {
         transform: translate(0, 6px) rotate(45deg);
-        background-color: white;
-    }
-    
-    div#hamburger.active
-    span.burger-line:nth-child(2) {
-        opacity: 0;
     }
 
-    div#hamburger.active
-    span.burger-line:nth-child(3) {
+    .burger-line.active:nth-child(2) {
+        background: transparent;
+    }
+
+    .burger-line.active:nth-child(3) {
         transform: translate(0, -6px) rotate(-45deg);
-        background-color: white;
     }
 
-    header#home-top
-    nav#navbar {
-        right: -100px;
+    .side-bar.show {
+        width: 50%;
     }
 
-    header#home-top
-    nav#navbar.active {
-        position: fixed;
+    .top-area {
+        position: relative;
         top: 0;
         right: 0;
-        background-color: black;
-        transition: 0.5s;
-        width: 200px;
-        padding-bottom: 50px;
-        
-        ul.nav-list {
-            flex-direction: column;
-            margin-top: 10vw;
-            gap: 10vw;
+        width: 100%;
+        height: 100px;
+        background-color: #020202;
+    }
+
+    .nav-list {
+        /* display: flex; */
+        flex-direction: column;
+        align-items: flex-start;
+
+        li {
+            color: black;
+            padding: 1rem;
         }
     }
 
-    ul.nav-list.active li.nav-btn:nth-of-type(n) {
-        display: block;
-        font-size: 5vw;
-        color: white;
+    .contact {
+        background: none;
+        font-weight: normal;
     }
 
-    ul.nav-list li.nav-btn {
+
+    svg {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    
+    /*Header tag starts*/
+
+    #navbar {
         display: none;
     }
     /*Header tag ends*/
     
     /*Main tag starts*/
-    main {
-        flex-direction: column;
-        gap: 5vw;
-    }
+    /* .main {
+        justify-content: center;
+    } */
 
-    main
-    div#main-description
-    h1 {
-        font-size: 9vw;
-        justify-content: space-around;
-    }
-
-    main
-    div#main-description
-    p {
-        font-size: 4vw;
-    }
-
-    main
-    div#main-description
-    button {
-        font-size: 4vw;
-        width: 50vw;
-        height: 10vw;
-        border-radius: 20px;
-    }
-
-    main
-    div#main-description {
-        margin-left: 0;
-        order: 2;
-    }
-
-    main
-    img.for-web {
-        width: 80vw;
-        height: 70vw;
-        margin-right: 0;
-        order: 1;
+    .main-content {
+        /* justify-content: space-around; */
+        gap: 3rem;
     }
     /*Main tag ends*/
 
     /*Footer tag starts*/
-    footer {
-        letter-spacing: 5vw;
-    }
 
-    footer svg {
-        margin-top: 2vw;
-        width: 10vw;
-        height: 10vw;
-    }
     /*Footer tag ends*/
 }
 /*Media queries end*/

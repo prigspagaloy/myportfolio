@@ -1,9 +1,5 @@
-/* const navHam = document.getElementById("hamburger");
-const navMenu = document.getElementById("navbar");
-const navBtn = document.getElementById("menu");
+const projectBtn = document.querySelector(".project-btn");
 
-navHam.addEventListener("click", () => {
-    navHam.classList.toggle("active");
-    navMenu.classList.toggle("active");
-    navBtn.classList.toggle("active");
-}); */
+projectBtn.addEventListener("click", () => {
+    window.location = "/projects.html"
+})
