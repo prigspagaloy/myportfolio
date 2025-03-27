@@ -10,56 +10,7 @@ body {
 }
 
 /*Header tag starts*/
-header#home-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-span.logo-description, ul.nav-list {
-    font-size: 1.5vw;
-    font-family: 'Work Sans', sans-serif;
-}
-
-header#home-top
-#web-logo
-h1#logo-design,
-span.logo-description {
-    display: inline-block;
-    margin-right: 0.5vw;
-    font-weight: bold;
-}
-
-#home-top
-#web-logo {
-    margin-left: 5vw;
-}
-
-#home-top
-#web-logo
-#logo-design {
-    font-family: 'Brittany Signature', sans-serif;
-    font-size: 1.8vw;
-}
-
-#home-top #navbar
-.nav-list {
-    display: flex;
-    gap: 8vw;
-    margin: 0;
-    margin-right: -28vw;
-}
-
-#home-top nav#navbar
-ul.nav-list
-li.nav-btn {
-    list-style: none;
-}
 /*Header tag ends*/
 
 div#form-container {
