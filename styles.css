@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     background-color: #020202;
-    color: white;
+    color: #e2e2e2;
     height: 100vh;
 }
 
@@ -76,7 +76,7 @@ a {
     right: 0;
     width: 0;
     height: 100%;
-    background-color: white;
+    background-color: #e2e2e2;
     transition: 0.3s allow-discrete;
 }
 
@@ -163,7 +163,7 @@ svg {
     .burger-line {
         width: 100%;
         height: 20%;
-        background-color: white;
+        background-color: #e2e2e2;
         border-radius: 50px;
         transition: 0.3s;
     }
