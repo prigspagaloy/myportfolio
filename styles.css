@@ -78,6 +78,7 @@ a {
     height: 100%;
     background-color: #e2e2e2;
     transition: 0.3s allow-discrete;
+    z-index: 888;
 }
 
 /* .side-bar {
@@ -157,7 +158,7 @@ svg {
         justify-content: space-between;
         width: 30px;
         height: 15px;
-        z-index: 555;
+        z-index: 999;
     }
 
     .burger-line {
