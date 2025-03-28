@@ -10,20 +10,57 @@
 </head>
 <body>
     <header id="home-top"></header>
-    <div id="form-container">
-        <form id="contact-form" action="" method="get">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" class="firstname" placeholder="Your name...">
-           <label for="lname" id="label-lname">Last Name</label>
-            <input type="text" id="lname" class="lastname" placeholder="Your last name...">
-            <label for="subject" id="label-subject">Subject</label>
-            <textarea name="subject" id="subject" placeholder="Write inquiries here..."></textarea>
-            
-            <input id="submit-form" type="submit" value="Submit">
-        </form>
-    </div>
+    <main class="contact-content">
+        <h1 class="contact-title">Contact Me</h1>
+        <div class="contact-container">
+            <div class="contact-box outlook">
+                <div class="contact-icon-container">
+                    <img class="contact-icon" src="./Img/outlook.png" alt="outlook logo">
+                </div>
+                <div class="contact-logo-name">
+                    <p>OUTLOOK</p>
+                </div>
+                <div class="contact-url">
+                    <a href="mailto:prigspagaloy@outlook.com"><p>prigspagaloy@outlook.com</p></a>
+                </div>
+            </div>
+            <div class="contact-box gmail">
+                <div class="contact-icon-container">
+                    <img class="contact-icon" src="./Img/gmail-logo.png" alt="gmail logo">
+                </div>
+                <div class="contact-logo-name">
+                    <p>GMAIL</p>
+                </div>
+                <div class="contact-url">
+                    <a href="mailto:prigspangi@gmail.com"><p>prigspangi@gmail.com</p></a>
+                </div>
+            </div>
+            <div class="contact-box linked-in">
+                <div class="contact-icon-container">
+                    <img class="contact-icon" src="./Img/linkedin.png" alt="linkedin logo">
+                </div>
+                <div class="contact-logo-name">
+                    <p>LINKEDIN</p>
+                </div>
+                <div class="contact-url">
+                    <a href="https://www.linkedin.com/in/russel-figalan/"><p>www.linkedin.com/in/russel-figalan</p></a>
+                </div>
+            </div>
+            <div class="contact-box github">
+                <div class="contact-icon-container">
+                    <img class="contact-icon" src="./Img/github.png" alt="github logo">
+                </div>
+                <div class="contact-logo-name">
+                    <p>GITHUB</p>
+                </div>
+                <div class="contact-url">
+                    <a href="https://github.com/prigspagaloy/"><p>github.com/prigspagaloy</p></a>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <script src="header.js"></script>
-    <script type="module" src="contact.js"></script>
+    <script type="module" src="./Contact/contact.js"></script>
 </body>
 </html>
