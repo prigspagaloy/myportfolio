@@ -1,5 +1,10 @@
 const projectType = document.getElementById("projects");
 const displayProjects = document.getElementById("projects-display");
+const header = document.getElementById("home-top");
+
+if (window.location.pathname.includes("projects.html")) {
+    header.style.position = "static";
+}
 
 fetch("Projects/projects.json").then(response => response.json()).then(json => {
     getJson(json);

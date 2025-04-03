@@ -2,7 +2,7 @@ const header = document.getElementById("home-top");
 
 header.innerHTML = `
     <div id="web-logo">
-        <img class="logo" src="./Img/logo.png">
+        <img class="logo" src="./Img/LOGO-removebg-preview.png">
     </div>
         <nav id="navbar">
             <ul id="menu" class="nav-list">

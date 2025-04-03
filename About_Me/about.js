@@ -1,9 +1,5 @@
-/* const navHam = document.getElementById("hamburger");
-const navMenu = document.getElementById("navbar");
-const navBtn = document.getElementById("menu");
+const header = document.getElementById("home-top");
 
-navHam.addEventListener("click", () => {
-    navHam.classList.toggle("active");
-    navMenu.classList.toggle("active");
-    navBtn.classList.toggle("active");
-}); */
+if (window.location.pathname.includes("about.html")) {
+    header.style.position = "static";
+}
